@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Practico Web</title>
+    <title>HTML & CSS: Curso práctico avanzado</title>
 </head>
-<body>
-    
 
-    <script src="examen_web2.css"></script>
-    <script src ="examen_web3.js"></script>
+<body>
+    <header>
+        <h1>HTML & CSS: Curso práctico avanzado</h1>
+    </header>
+    <div id="botones">
+        <button id="reordenar">Reordenar Contenido</button>
+        <button id="cambiar-titulo">Cambiar titulo</button>
+        <button id="cambiar-subtitulo">Cambiar color y fuente</button>
+        <button id="agregar-imagen">Agregar imagen</button>
+    </div>
+    <main>
+        <div id="contenedor">
+            <section id="datos-libro">
+                <aside>
+                    <ul>
+                        <li><strong>Título:</strong><br>HTML & CSS: Curso práctico avanzado</li>
+                        <li><strong>Autor:</strong><br>Sergio Luján Mora</li>
+                        <li><strong>Editorial:</strong><br>Publicaciones Altaria</li>
+                        <li><strong>Año de publicación:</strong><br>2023</li>
+                        <li><strong>ISBN:</strong><br>978-84-944049-4-8</li>
+                    </ul>
+                </aside>
+                <!-- Aquí aparecerá la imagen agregada por JS -->
+                <div id="imagen-libro-container"></div>
+            </section>
+            <section id="info-libro">
+                <div id="descripcion-libro">
+                    <h2>Descripción del libro</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum."
+                    </p>
+                </div>
+                <div id="contenido-libro">
+                    <h2>Contenido del libro</h2>
+                    <p>
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                        magnam aliquam quaerat voluptatem. corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    </p>
+                    <div id="contenido-parrafo">
+                        <section class="cont-parr">En la primera parte del libro se trabajan conceptos generales que son
+                            necesarios para poder desarrollar páginas web; se explican conceptos de estructura física y
+                            estructura lógica (o estructura de navegación) de un sitio web. Se detalla cómo influye la
+                            estructura física en las URL o direcciones que se emplean a la hora de crear los enlaces de
+                            un sitio web. Pasando por el concepto de "estándar web", un término general que se emplea
+                            para referirse a los estándares que definen su funcionamiento como HTML y CSS, empleados
+                            para el desarrollo de las páginas web en el lado del cliente.</section>
+                        <section class="cont-parr">En la segunda parte se trabaja HTML. Partiendo de la estructura básica
+                            de una página web, se explican las etiquetas de HTML que se utilizan para definir el texto, los
+                            enlaces, las listas, las tablas, los formularios y los elementos multimedia.<br><br>
+                            En la tercera y última parte se explica CSS, el lenguaje que se emplea para definir el
+                            formato y la presentación de una página web. Se explica cómo utilizar el color, cómo definir
+                            la presentación del texto, de las tablas y de los formularios; cómo realizar
+                            transformaciones y transiciones con el fin de diseñar una página web.</section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
